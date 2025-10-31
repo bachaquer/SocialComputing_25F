@@ -66,33 +66,33 @@ We have implemented a series of stages starting from registering as a new user, 
 
 ## Important Screenshots & Tasks Instructions
 
+#### Task 1. Browsing and Filtering events.
+
 ![](./images/s1.png)
 
 **Figure 1. First, Second, and Third Screenshots**
-
-#### Task 1. Browsing and Filtering events.
 
 -   While registering an account, the user selects one or more categories of event they are interested in (Figure 1. First Screenshot).
 -   After category selection, the user is sent to the main page “Feed” where they see the list of activities in all categories that are being organized by other users (Figure 1. Second Screenshot).
 -   The user sees the category types in the top navigation bar. For the ease of browsing, categories of interest are highlighted with pale blue color (Figure 1. Second Screenshot).
 -   The user can filter events by tapping on one or more categories they are planning to participate in, which will make “Feed” show events only from the same category (Figure 1. Third Screenshot).
 
+#### Task 2. Automatic Grouping of Participants into Chat.
+
 ![](./images/s2.png)
 
 **Figure 2. First, Second, Third, Fourth, Fifth, and Sixth Screenshots**
-
-#### Task 2. Automatic Grouping of Participants into Chat.
 
 -   When the user taps an event, it directs the user to the “Event Details” page where they see the basic information about the activity (Figure 2. First Screenshot).
 -   If the user decides to participate in that event, they click the “Join Now” button in the bottom of the screen (Figure 2. First Screenshot).
 -   After joining the event, the user is sent to the group chat dedicated to that activity where they can send messages, such as self-introduction and discussion for an event coordination (Figure 2. Second, Third and Fourth Screenshot).
 -   Later, the user can access the group chat by finding the activity in the “My Events” page (Figure 2. Fifth Screenshot) and clicking the blue “Open Group Chat” button in the middle (Figure 2. Sixth Screenshot).
 
+#### Task 3. Creating an Event Post.
+
 ![](./images/s3.jpg)
 
 **Figure 3. First, Second, Third, Fourth, Fifth, and Sixth Screenshots**
-
-#### Task 3. Creating an Event Post.
 
 -   In the “Feed” and “My Events” pages in the bottom navigation bar of the app, the user sees the big blue plus button on the bottom right side of their device (Figure 3. First and Second Screenshots).
 -   After tapping the blue circled plus button, the user opens the bottom sheet dialog and fills out the event-related information: Activity Name, Category, Date & Time, Location, and Target Number of Participants (Figure 3. Third and Fourth Screenshot).
@@ -100,11 +100,11 @@ We have implemented a series of stages starting from registering as a new user, 
 -   After creating the post, it appears in the “Feed” page where everyone can see their post (Figure 3. Fifth Screenshot).
 -   The post also appears in the “My Events” page since the user is automatically considered as a participant for the activity they created (Figure 3. Sixth Screenshot).
 
+#### Task 4. Sending a Reminder with a Mandatory Confirmation Check.
+
 ![](./images/s4.jpeg)
 
 **Figure 4. First, Second, Third, Fourth, Fifth, and Sixth Screenshots**
-
-#### Task 4. Sending a Reminder with a Mandatory Confirmation Check.
 
 -   30 minutes before the start time of an event, the user receives the push-notification from the app (Figure 4. First Screenshot).
 -   By tapping the push-notification, the user opens the “Notifications” page, where they can see the notifications of 24 hours, 3 hours, and 30 minutes before the other events (Figure 4. Second Screenshot).
@@ -124,29 +124,29 @@ Participants' experiences with similar apps: All three participants had prior ex
 
 #### Regarding Task 1: User Registration and Onboarding
 
-![](./images/p1.png)
-
-**Figure 6. Problem 1**
-
 **Problem 1:** Welcome/Tutorial Screen Shown on Every Login (P2) - High level of criticality
 
 Description: The welcome tutorial appears every time the user logs in, not just on first sign-up. This creates unnecessary friction for returning users.
 
 Plan for improvement: To track whether the tutorial has been shown for the user. Display welcome screens only when FirstLogis is True, then set to false after completion.
 
-  
+![](./images/p1.png)
+
+**Figure 6. Problem 1**
 
   
 
-![](./images/p2.png)
-
-**Figure 7. Problem 2**
-
+  
 **Problem 2:** Lack of Student Year Display (P2) - Medium level of criticality
 
 Description: User profiles don't show which year the student is in (freshman, sophomore), making it harder to find peers at similar academic stages.The study user participant suggested that this feature is important to know.
 
 Plan for improvement: Add a "Year" field to the user profile creation form and display it prominently on the profile page.
+
+![](./images/p2.png)
+
+**Figure 7. Problem 2**
+
 
   
 

@@ -122,120 +122,77 @@ Participants' experiences with similar apps: All three participants had prior ex
 
 ### Usability Problems Discovered
 
-#### Regarding Task 1: User Registration and Onboarding
+#### Regarding Task 1: Browsing and Filtering events
 
-**Problem 1:** Welcome/Tutorial Screen Shown on Every Login (P2) - High level of criticality
+**Problem 1:** "All" Feed Sorting is Confusing (P3) - Medium level of criticality
 
-Description: The welcome tutorial appears every time the user logs in, not just on first sign-up. This creates unnecessary friction for returning users.
+-   Description: When the "All" filter is selected, the feed correctly sorts events by user preferences first. However, there's no visual cue to explain this. P3 couldn't figure out the sorting order and just thought the feed was "random," completely missing the smart sorting feature.
+-   Plan for improvement: Add clear section headers to the feed when "All" is selected. Show a "For You" (or "Based on Your Interests") header above the preferred events, followed by a divider and an "Other Events" header for the rest.
 
-Plan for improvement: To track whether the tutorial has been shown for the user. Display welcome screens only when FirstLogis is True, then set to false after completion.
+**Problem 2:** Category Filter Bar Isn't Obviously Scrollable (P3) - Low level of criticality
+
+-   Description: On the main feed, P3 didn't realize the horizontal category filter (Sports, Study, Meals...) was scrollable. They only saw the first 4-5 categories and thought that was the complete list. P3 was looking for "Music" and couldn't find it.
+-   Plan for improvement: Ensure the last visible category item on the right is partially cut off. This visual cue tells the user there's more content to scroll to.
+
+**Problem 3:** Unclear "My Events" vs. Feed (P3) - Medium level of criticality
+
+-   Description: P3 joined an event, then went to the "My Events" tab and saw it there. He then went back to the main feed and saw the same event card. This made him pause, thinking, "Did I join it or not? Why is it in both places?" He was confused if the feed was supposed to be only for events he hadn't joined.
+-   Plan for improvement: Add a clear visual badge or label (e.g., a green "Joined" checkmark or "You're in!") to event cards in the main feed after a user has joined them. This confirms their action and clarifies why they're seeing it in both tabs.
+
+#### Regarding Task 2: Automatic Grouping of Participants into Chat
+
+**Problem 4:** Automatic Chat Join Causes Confusion (P2) - Medium level of criticality
+
+-   Description: Users are automatically added to the event group chat upon joining, but expected to manually navigate to it. This wasn't clear from the UI.
+-   Plan for improvement: After clicking "Join Now," show a brief confirmation modal: "You've joined! [View Event Chat]" with a direct button to the chat.
+
+#### Regarding Task 3: Creating an Event Post
+
+**Problem 5:** No Notification for Organizer When Someone Joins/Leaves (P1) - High level of criticality
+
+-   Description: Event organizers don't receive any notification when a participant joins or leaves their event. This makes it difficult to track attendance and plan accordingly.
+-   Plan for improvement: Implement push notifications and in-app badges for organizers when: (1) someone joins their event, (2) someone leaves, (3) the event reaches maximum capacity. Include a participant count update in the notification.
+
+**Problem 6:** Organizer Cannot Manage Participants (P3) - High level of criticality
+
+-   Description: As the event organizer (P3), he saw the participant list on the event details screen but had no way to manage it. He was concerned about what to do if someone who joined was a known "no-show" or if he needed to remove a participant for any reason. Tapping on a participant's name (like "Sarah L.") in the list did nothing, but he expected it to open options to "Remove from Event" or "View Profile."
+-   Plan for improvement: Update the Event Details screen so that only the organizer can tap on a participant's name. When they do, open a small modal with options to "View Profile" and "Remove from Event." This gives organizers control over their attendee list.
+
+#### Other (User Registration and Onboarding):
+
+**Problem 7:** Welcome/Tutorial Screen Shown on Every Login (P2) - High level of criticality
+
+-   Description: The welcome tutorial appears every time the user logs in, not just on first sign-up. This creates unnecessary friction for returning users.
+-   Plan for improvement: To track whether the tutorial has been shown for the user. Display welcome screens only when FirstLogin is True, then set to false after completion.
 
 ![](./images/p1.png)
 
-**Figure 6. Problem 1**
+**Figure 6. Problem 7**
 
-  
+**Problem 8:** Lack of Student Year Display (P2) - Medium level of criticality
 
-  
-**Problem 2:** Lack of Student Year Display (P2) - Medium level of criticality
-
-Description: User profiles don't show which year the student is in (freshman, sophomore), making it harder to find peers at similar academic stages.The study user participant suggested that this feature is important to know.
-
-Plan for improvement: Add a "Year" field to the user profile creation form and display it prominently on the profile page.
+-   Description: User profiles don't show which year the student is in (freshman, sophomore), making it harder to find peers at similar academic stages.The study user participant suggested that this feature is important to know.
+-   Plan for improvement: Add a "Year" field to the user profile creation form and display it prominently on the profile page.
 
 ![](./images/p2.png)
 
-**Figure 7. Problem 2**
+**Figure 7. Problem 8**
 
+**Problem 9:** Dorm Selection Requires Manual Text Entry (P1) - Low level of criticality
 
-  
+-   Description: Users must manually type in their dorm name for location instead of selecting from a dropdown list, leading to inconsistent formatting and potential typos.
+-   Plan for improvement: Keep the text input field but add placeholder text and helper text to guide consistent formatting. For example, the placeholder could show "Building name (Building number)" with helper text below stating: "e.g., Areum Hall (N11), Creative Learning Building (E11). If not on campus, type 'Other' or specific location.
 
-**Problem 3:** Dorm Selection Requires Manual Text Entry (P1) - Low level of criticality
+**Problem 10:** No “Go Back” Button During Registration (P1) - Low level of criticality
 
-Description: Users must manually type in their dorm name for location instead of selecting from a dropdown list, leading to inconsistent formatting and potential typos.
+-   Description: During registration, users cannot return to previous screens to change their information or preferences. P1 attempted to go back after selecting interests but found no button or gesture to navigate backward..
+-   Plan for improvement: Add a back-navigation option
 
-Plan for improvement: Keep the text input field but add placeholder text and helper text to guide consistent formatting. For example, the placeholder could show "Building name (Building number)" with helper text below stating: "e.g., Areum Hall (N11), Creative Learning Building (E11). If not on campus, type 'Other' or specific location.
+**Problem 11:** Accidental Registration Flow (P2) - Medium level of criticality
 
-  
+-   Description: User accidentally completed registration and expected to be taken directly to a chat rather than the main feed, causing confusion about where they were in the app.
+-   Plan for improvement: Add a clear confirmation screen after registration that explains "Registration Complete! Browse events below or create your own." This sets proper expectations about the next steps.
 
-**Problem 4:** No “Go Back” Button During Registration (P1) - Low level of criticality
-
-Description: During registration, users cannot return to previous screens to change their information or preferences. P1 attempted to go back after selecting interests but found no button or gesture to navigate backward.
-
-Plan for improvement: Add a back-navigation option.
-
-  
-
-#### Regarding Task 2: Creating an Event Post
-
-**Problem 4:** No Notification for Organizer When Someone Joins/Leaves (P1) - High level of criticality
-
-Description: Event organizers don't receive any notification when a participant joins or leaves their event. This makes it difficult to track attendance and plan accordingly.
-
-Plan for improvement: Implement push notifications and in-app badges for organizers when: (1) someone joins their event, (2) someone leaves, (3) the event reaches maximum capacity. Include a participant count update in the notification.
-
-  
-
-**Problem 5:** Organizer Cannot Manage Participants (P3) - High level of criticality
-
-Description: As the event organizer (P3), he saw the participant list on the event details screen but had no way to manage it. He was concerned about what to do if someone who joined was a known "no-show" or if he needed to remove a participant for any reason. Tapping on a participant's name (like "Sarah L.") in the list did nothing, but he expected it to open options to "Remove from Event" or "View Profile."
-
-Plan for improvement: Update the Event Details screen so that only the organizer can tap on a participant's name. When they do, open a small modal with options to "View Profile" and "Remove from Event." This gives organizers control over their attendee list.
-
-  
-
-#### Regarding Task 3: Browsing and Joining Events
-
-**Problem 6:** Accidental Registration Flow (P2) - Medium level of criticality
-
-Description: User accidentally completed registration and expected to be taken directly to a chat rather than the main feed, causing confusion about where they were in the app.
-
-Plan for improvement: Add a clear confirmation screen after registration that explains "Registration Complete! Browse events below or create your own." This sets proper expectations about the next steps.
-
-  
-
-**Problem 7:** Automatic Chat Join Causes Confusion (P2) - Medium level of criticality
-
-Description: Users are automatically added to the event group chat upon joining, but expected to manually navigate to it. This wasn't clear from the UI.
-
-Plan for improvement: After clicking "Join Now," show a brief confirmation modal: "You've joined! [View Event Chat]" with a direct button to the chat.
-
-  
-
-**Problem 8:** "All" Feed Sorting is Confusing (P3) - Medium level of criticality
-
-Description: When the "All" filter is selected, the feed correctly sorts events by user preferences first. However, there's no visual cue to explain this. P3 couldn't figure out the sorting order and just thought the feed was "random," completely missing the smart sorting feature.
-
-Plan for improvement: Add clear section headers to the feed when "All" is selected. Show a "For You" (or "Based on Your Interests") header above the preferred events, followed by a divider and an "Other Events" header for the rest.
-
-  
-
-**Problem 9:** Category Filter Bar Isn't Obviously Scrollable (P3) - Low level of criticality
-
-Description: On the main feed, P3 didn't realize the horizontal category filter (Sports, Study, Meals...) was scrollable. They only saw the first 4-5 categories and thought that was the complete list. P3 was looking for "Music" and couldn't find it.
-
-Plan for improvement: Ensure the last visible category item on the right is partially cut off. This visual cue tells the user there's more content to scroll to.
-
-  
-
-**Problem 10:** Unclear "My Events" vs. Feed (P3) - Medium level of criticality
-
-Description: P3 joined an event, then went to the "My Events" tab and saw it there. He then went back to the main feed and saw the same event card. This made him pause, thinking, "Did I join it or not? Why is it in both places?" He was confused if the feed was supposed to be only for events he hadn't joined.
-
-Plan for improvement: Add a clear visual badge or label (e.g., a green "Joined" checkmark or "You're in!") to event cards in the main feed after a user has joined them. This confirms their action and clarifies why they're seeing it in both tabs.
-
-  
-
-#### Regarding Optional Tasks
-
-**Problem 11:** Unclear Meaning of “0 Score” Indicator (P1) - Low level of criticality
-
-Description: The “Attendance Score” feature confused participants, especially P2, who thought that “0 Score” meant the user was unreliable or inactive. The app didn’t explain that it actually means a new user who hasn’t attended any events yet.
-
-Plan for improvement: Add a short tooltip or info icon next to the score indicator that explains
-
-  
-
-### Summary of Critical Issues to Address
+#### Summary of Critical Issues to Address
 
 The most critical usability problems identified are those that create a "dead end" for the user or break core functionality. The welcome tutorial replaying on every login (P1), the lack of organizer notifications (P2), and the inability for organizers to manage their participant list (P3) are the top priority. These issues directly impact user retention and the app's core value proposition for both organizers and participants. Fixing these will be the immediate focus for the next iteration.

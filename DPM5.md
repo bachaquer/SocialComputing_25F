@@ -5,18 +5,22 @@
 ### **Representative Screenshots:**
 
 ![r1](./images/r1.jpeg) 
+
 Figure 1. Browsing and Filtering Events based on Category on the Main Feed Page.
 
 
 ![r2](./images/r2.jpeg) 
+
 Figure 2. Automatic Grouping into Chat after Joining an Event
 
 
 ![r3](./images/r3.jpeg) 
+
 Figure 3. Creating an Event Post Functionality on the Main Feed
 
 
 ![r4](./images/r4.png) 
+
 Figure 4. A Mandatory Confirmation Check in Notifications Page.
 
 
@@ -43,6 +47,7 @@ To reduce the rate of last-minute cancellations ("no-shows"), we designed a Mand
 We recruited 10 KAIST students (5 Koreans,5 internationals) from diverse majors and academic years (1st-4th year) through campus channels including KakaoTalk groups and word-of-mouth. Participants were guided through a 2-day testing period where they freely explored the app while completing structured tasks such as browsing/filtering events, creating events, joining with automatic group chat, and confirming attendance. Feedback was collected through a post-study survey and follow-up interviews in order to get both quantitative and qualitative feedback. The goal of this deployment was to evaluate whether the system supported our core functionalities as intended.
 
 ![1](./images/1.png) 
+
 Figure 5. Study Procedure
 
 #### *Results:*
@@ -50,6 +55,7 @@ Figure 5. Study Procedure
 All core user flows were successfully completed by nearly all participants, indicating that the system functioned as intended. Survey responses provided both quantitative ratings and comments that further describe users’ experiences.
 
 ![2](./images/2.png) 
+
 Figure 6. Usage Outcomes
 
 #### *Platform Activity During Study:*
@@ -63,6 +69,7 @@ Figure 6. Usage Outcomes
 Participants rated features on a 5-point scale. Scores below represent averages across all 10 participants:
 
 ![3](./images/3.png) 
+
 Figure 7. Quantitative Feedback
 
 Survey feedback was strongly positive: ease of navigation averaged 4.8, creating and joining events 4.7, chat usefulness 5, confirmation helpfulness 4.6, and overall intuitiveness 5.
